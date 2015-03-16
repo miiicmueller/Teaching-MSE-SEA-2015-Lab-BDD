@@ -1,65 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ch.heigvd.res.lab00;
 
 /**
- * 
- * @author DarkOne
+ *
+ * @author Olivier Liechti
  */
-public class Flute implements IInstrument{
+public class Flute implements IInstrument {
 
-    /**
-     * Private static final attributes
-     */
-    
-    private static final int FLUTE_VOLUME = 10 ;
-    private static final String FLUTE_SOUND = "tuuu" ;
-    private static final String FLUTE_COLOR = "brown" ;
+  @Override
+  public String play() {
+    return "piout";
+  }
 
-    /**
-     * Public functions
-     */
-    
-    public Flute()
-    {
-        
-    }
-    
-  
-    /**
-     * Interfaces public functions  
-     */
+  @Override
+  public int getSoundVolume() {
+    return 100;
+  }
 
-    
-    /**
-     * Plays the sound of the flute
-     * @return String : sound
-     */
-    @Override
-    public String play() {
-        return FLUTE_SOUND ;
-    }
+  @Override
+  public String getColor() {
+    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+  }
 
-    
-    /**
-     * Get the volume of the flute
-     * @return int : flute volume
-     */
-    @Override
-    public int getSoundVolume() {
-        return FLUTE_VOLUME ;
-    }
-
-    /**
-     * Get the color of a flute
-     * @return String : color
-     */
-    @Override
-    public String getColor() {
-        return FLUTE_COLOR;
-    }
-    
 }

@@ -7,31 +7,14 @@ package ch.heigvd.res.lab00;
 
 /**
  *
- * @author DarkOne
+ * @author admin
  */
 public interface IInstrument {
-    
-    
-    /**
-     * Public function to play the instrument
-     * @return String : Sound of the instrument
-     */
-    public String play();
-    
-    
-    /**
-     * Public function to get the volume of the 
-     * instrument
-     * @return int : Volume [0 - 100] dB
-     */
-    public int getSoundVolume();
-    
-    
-    /**
-     * Public function to get the instrument color
-     * @return 
-     */
-    public String getColor();
-    
-            
+
+  public String play();
+
+  public int getSoundVolume();
+
+  public String getColor();
+  
 }
